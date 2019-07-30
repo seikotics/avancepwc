@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+<br>
+
+{% if imagen_list %}
+<div class="container gallery-container">
+  <h1 style="text-align:center;color: #1e4f99">Galeria Cyties - Investigaci&oacute;n y desarrollo</h1>
+  <hr class="divider my-4">
+  <br>
+  <div class="tz-gallery">
+
+      <div class="row">
+
+          {% for imagen in imagen_list %}
+
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                  <a class="lightbox" href="{{imagen.imagen_archivo.url}}">
+                      <img src="{{imagen.imagen_archivo.url}}" alt="{{imagen.nombre_imagen}}">
+                  </a>
+                  <div class="caption">
+                      <h5>{{imagen.nombre_imagen}}</h5>
+                      <p>{{imagen.descripcion_imagen}}</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+
+      </div>
+
+  </div>
+
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+{% else %}
+      <h1>No se encontraron imagenes </h1>
+    {% endif %}  
+{% endblock content %}

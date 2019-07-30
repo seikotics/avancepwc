@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+{{imagen}}
+<img src="{{imagen.imagen_archivo.url}}" alt="{{imagen.nombre_imagen}}" style="width:150px;">
+      <p>{{imagen.imagen_archivo}}</p>
+ 
+{% endblock content %}

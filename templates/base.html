@@ -1,0 +1,197 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CYTIES - Investigacion y Desarrollo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navigation -->
+  <nav style="background-color:rgba(255, 255, 255, 0.582)" class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+      <div class="container">
+        <img src="/static/img/logo1.png" height="50">
+        <img src="/static/img/logo2.png"height="50">
+        <a class="navbar-brand js-scroll-trigger" href="/"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">Inicio</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/about">CYTIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/centros">Centros y Laboratorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/agenda">Agenda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/galeria">Galeria</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+    {% block content %}
+    
+    {% endblock %}
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mb-4">CYTIES - Investigaci&oacute;n y Desarrollo</h5>
+          <p>CYTIES Investigación y Desarrollo nace el 20 de octubre del año 2006, correspondiendo su
+              nombre a la abreviatura de “Ciencia y Tecnología en Investigación Económica y Social”.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Acerca de Nosotros</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a href="#!">Inicio</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="/about">Acerca de Nosotros</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="/servicios">Servicios</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="/centros">Centros y Laboratorios</a>
+              </p>
+            </li>
+            <li>
+                <p>
+                  <a href="/agenda">Agenda</a>
+                </p>
+              </li>
+              <li>
+                  <p>
+                    <a href="/galeria">Galeria</a>
+                  </p>
+                </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Contacto</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-home mr-3"></i> Lima 360 Depto. 58 Edificio Los Sauces.</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> contacto@cyties.cl - info@cyties.cl</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-phone mr-3"></i>56-55--2546874</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-print mr-3"></i>9 8504 8464</p>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+  
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-4">S&iacute;guenos</h5>
+  
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <!-- Twitter -->
+          <a type="button" class="btn-floating btn-tw">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- Google +-->
+          <a type="button" class="btn-floating btn-gplus">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <!-- Dribbble -->
+          <a type="button" class="btn-floating btn-dribbble">
+            <i class="fab fa-dribbble"></i>
+          </a>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="/"> Seikotics - Asesor&iacute;as y Desarrollo </a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body> 
+</html>

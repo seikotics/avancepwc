@@ -1,0 +1,29 @@
+
+nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    display: block;
+    
+  }
+  
+  .nav1{
+    background: transparent;
+    height: 80px;
+    color:rgb(245, 212, 212);
+  }
+  
+  .nav2{
+    background: var(--fondo);
+    height:100px;
+    color:rgb(255, 255, 255);
+  }
+  
+  
+  .row {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }

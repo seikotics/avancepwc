@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<section id="agenda">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+          <p style="text-align: justify"><small class="text-muted">{{agenda.fechapublicacion_agenda}} </small></p>
+        <h2 style="text-align: center ;color: #1e4f99"> <a href="{{agenda.pk}}">{{agenda.titulo_agenda}}</a></h2>
+        <h4 style="text-align: center ;color: #1e4f99"> {{agenda.bajada_titulo_agenda}} </h4>
+        
+        
+   
+    
+          <hr class="divider my-4">
+        <section id="agenda">
+        <div class="container">
+            <div class="card mb-3" style="width: 40rem;">
+                <img src="{{agenda.imagen_agenda.url}}" class="card-img-top" alt="{{agenda.titulo_agenda}}">
+                <br>
+                <div class="card-body">
+                  <br>
+                  <p class="card-text" style="text-align: justify">{{agenda.texto_agenda}}</p>
+                </div>
+                <img src="{{agenda.imagen_agenda_dos.url}}" class="card-img-top" alt="{{agenda.titulo_agenda}}">
+              </div>
+        </div>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>   
+<br>
+<br>
+<br>
+    
+{% endblock content%}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<section id="agenda">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 style="text-align: center ;color: #1e4f99">Centros y Laboratorios </h2>
+        <hr class="divider my-4">
+        {% if agenda_list %}
+        {% for agenda in agenda_list %} 
+        <section id="agenda">
+        <div class="container">
+            <div class="card mb-3" style="width: 40rem;">
+                <img src="{{agenda.imagen_agenda.url}}" class="card-img-top" alt="{{agenda.titulo_agenda}}">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="{{agenda.pk}}">{{agenda.titulo_agenda}}</a></h5>
+                  <p class="card-text" style="text-align: justify"><small class="text-muted">{{fechapublicacion_agenda}} </small></p>
+                  <br>
+                  <br>
+                  <p class="card-text" style="text-align: justify">{{agenda.texto_agenda}}</p>
+                  <a href="{{agenda.pk}}" class="btn btn-primary">ver más...</a>
+                </div>
+              </div>
+        </div>
+        </section>
+        {% endfor %} 
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>   
+<br>
+<br>
+<br>
+    </ul>
+    {% else %}
+      <h1>No se encontraron agenda </h1>
+    {% endif %}  
+
+{% endblock content %}
